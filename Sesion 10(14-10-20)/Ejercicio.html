@@ -9,6 +9,44 @@
     .clasecolor{
         color:blueviolet;
     }
+    /*Selector de elementos*/
+    p{
+        text-align:center;
+        color:cyan;
+    }
+    #particularcolor1{ /*Selector de id*/
+        color:goldenrod;
+    }
+    .clasealineacion1{
+        text-align: right;
+    }
+    .variasclases1{ /*Clase para aplicar varias clases*/
+        color:darkgreen;
+    }
+    .variasclases2{
+        text-align: center;
+    }
+    h1,h2,p{ /*Agrupacion de selectores*/
+        color:darkolivegreen;
+    }
+    #colorfondo1{
+        background-color: lawngreen;
+        color:white;
+    }
+    .imagenfondo1{
+        background-image: url("./foto/gatsby.jpg");
+    }
+    .capaimagenfondo2{
+        background-image: url("./foto/hamilton.jpg");
+        width: 70%;
+        height: 700px;
+        margin:auto;
+        /*background-repeat: no-repeat;*/
+        /*background-repeat: repeat-x;*/
+        /*background-repeat: repeat-y;*/
+        /*background-repeat: repeat;*/
+        background-position: center bottom;
+    }
     
     </style>
     <link rel="stylesheet" tyoe="text/css" href="css/Hojaestilos1.css">
@@ -23,6 +61,21 @@
     <p>Este parrafo tendra dentro un <span style="color:chocolate;">span que utilizara un estilo en linea</span></p>
     <h2>Probar prioridades a la hora de probar estilos: en linea/directo , de forma interna o de forma externa</h2>
     <p style="color:deeppink;" class="clasecolor">Este parrafo va a tener propiedades que se sobrescriben.El estilo de linea tiene prioridad sobre el estilo interno</p>
-    <p class="clasecolor colorhojaexterna">Pruebo el orden de prioridades entre una hoja de estilos interna y otra externa</p>
-</body>
+    <p class="clasecolor colorhojaexterna">Pruebo el orden de prioridades entre una hoja de estilos interna y otra externa.El codigo se interpetra en cascada osea linea por linea</p>
+    <h2>Selectores</h2>
+    <p>Los elementos que tengan una espeficica van a tener las propiedades de esa clase espeficica con prioridad sobre los selectores de elemento</p>
+    <p id="particularcolor1">Este parrafo va a cumplir un estilo particular,tiene priodridad sobre el slector de elemento si hay propiedades que se sobrescriban</p>
+    <p class="clasealineacion1">Este parrafo cumple una clase "clasealineacion1".Si cumpliera un selector de nombre,las propiedades comunes con la  clasealineacion1 tendrian prioridad en el selector de clase </p>
+    <h2>Aplicar varias clases a un elemento</h2>
+    <div class="variasclases1 variasclases2">Capa que cumple varias clases</p></div>
+    <h2>Colores fuente</h2>        
+     <div id="colorfondo1">
+         Esta capa tendra texto de color blanco y fondo verde
+     </div>   
+     <h3 style="color:#6a5acd">Color establecido con codigo hexadecimal</h3>
+    <div class="imagenfondo1">Como la capa no tiene dimensiones , solo se vera la porcion de imagen adaptada a la cantidad del texto.
+        Si no hubiera escrito texto esta imagen no se veria.
+    </div>
+    <h2>Trabajo con img de fondo en capas con una dimension determinada</h2>
+    <div class="capaimagenfondo2"></div>
 </html>
