@@ -1,0 +1,30 @@
+/* Pseudo clases para controlar el estado de las clases*/
+a:link{
+    color:green;
+    text-decoration: none; /*Para que los enlaces no aparezcan subrayados*/
+}
+
+a:visited{
+    color:red;
+}
+a:active{
+    color:aquamarine;
+    background-color: palegoldenrod;
+}
+a:hover{
+    color:orange;
+    text-decoration: underline;
+}
+ol{
+    background-color: #ff9999;
+    padding: 20px;
+}
+ol li{ /* elementos li en un elemento ol*/
+    background-color: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+
+}
+ul{
+    list-style-image: url("../recursos/favicon.jpg");
+}
