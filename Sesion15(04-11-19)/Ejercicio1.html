@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sesion 15</title>
+    <link rel="stylesheet" href="css/hojaEstilo1.css">
+</head>
+<body>
+    <h2>List style position</h2>
+    <h3>Outside</h3>
+    <ol class="a">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ol>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        </ol>
+    <h3>Inside</h3>
+    <ul class="b">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+    <h2>Combinadores</h2>
+    <h3>Selector descendente</h3>
+    <div>
+        <p>Este parrafo es descendente del div. Deberia aparecer en verde.</p>
+        <span><p>¿Este parrafo es decendiente del div?</p></span>
+        <p>Este parrafo tambien deberia ser decendiente</p>
+    </div>
+    <h3>Selector fijo</h3>
+    <spam>
+        <a href="https://www.amazon.es" target="_blank">Enlace hijo de span</a>
+        <a href="https://www.marca.com" target="_blank">Enlace hijo de span</a>
+        <div>
+            <a href="https://www.netflix.com" target="_blank">Enlace decendiente de spam , pero no hijo</a> 
+        </div>
+        <a href="https://www.nike.com" target="_blank">Enlace hijo de span</a>
+    </spam>
+    <h3>Selector adyacente hermano</h3>
+    <div>
+        <h4>Esto es un h4</h4>
+        <h5>Esto es un h5 hermano adyacente de un elemento h4 deberia aparecer en color aquamarine</h5>
+        <h5>Esto es un h5 hermano de un elemento de h4 , pero no es un hermano adyacente por lo que no deberia cambiar de color</h5>
+    </div> 
+    <h3>Selector hermano general</h3>
+    <div>
+        <h5>Esto es un h5</h5>
+        <h6>Esto es un h6 que es hermano adyacente de un elemento h5</h6>
+        <h6>Esto es un h6 que es hermano general de un elemento h5</h6>
+        <h6>Esto es un h6 que es hermano general de un elemento h5</h6>
+    </div> 
+    <h3>Pseudoclases</h3>
+    <div>
+        <a class="resaltado" href="https://thewitcher.com/es/">Enlace a Thw witcher. Elemento que cumple una clase "resaltado" y que activa su estilo al poner el raton encima</a>
+        <p class="resaltado">Elemento que cumple la clase resaltado que en teoria deberia estar restringida a que elementos a y su Pseudoclase hover</p>
+    </div>  
+</body>
+</html>
