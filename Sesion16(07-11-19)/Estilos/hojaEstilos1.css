@@ -1,0 +1,29 @@
+.displaynone{
+    width: 75%;
+    min-height: 500px;
+    border: 1px solid black;
+    display:none;
+}
+.displayinline{
+    color:red;
+    display:inline;
+    border:1px solid black;
+    /*Al tratarse del valor inline de la propiedad , no es posible establecer un ancho fijo , width no funciona.Tampoco margen superior,inferior,alto y float*/
+}
+.pruebasimagen{
+    width:90%;/* !Cuidado el ancho afecta a determinados elementos a pesar de tener la propiedad display¡*/
+    border:5px solid lightcoral;
+    box-sizing: border-box;
+}
+.displayinlineblock{
+    width:50%;/*Automaticamente se añade espacio entre elementos inline block*/
+    border:2px solid paleturquoise;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.capaoculta{
+    width:80%;
+    min-height: 500px;
+    border:2px solid black;
+    visibility: hidden;
+}
