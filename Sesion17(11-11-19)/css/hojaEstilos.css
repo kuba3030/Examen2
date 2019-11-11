@@ -1,0 +1,31 @@
+.capaestandar{
+    width: 40%;
+    min-height:200px ;
+    border:1px solid black;
+}
+
+.positionfixed{
+    position: fixed;
+    left:50%;
+    top:50px;
+    
+}
+.positionsticky{
+    position: sticky;
+    left:0%;
+    top:0px;
+    border:2px red solid;
+}
+
+.capa200parawidth{
+    width:200%;
+    min-height: 200px;
+    border:solid 1px black;
+}
+.positionabsolute{
+    position: absolute;
+    top:300px;
+    left:10%;
+    border:solid 1px greenyellow;
+    font-weight: bolder;
+}

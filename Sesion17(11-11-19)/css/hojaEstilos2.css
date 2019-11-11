@@ -1,0 +1,43 @@
+.capaEstaPeq{
+    width: 300px;
+    min-height: 200px;
+    border:solid 1px black;
+}
+.contenedor{
+    width: 90%;
+    min-height: 600px;
+    margin: auto;
+    border:1px solid black;
+    box-sizing: border-box;
+    position: relative; /* Posicionamos el contenedor para que la capa de dentro se posicione de forma absoluta respecto a el*/
+}
+.positionabsolute{
+    position: absolute;
+    top:5%;
+    left:10%;
+}
+.capa1{
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    z-index: 200; /* Le hacemos de 100 en 100 para facilitar la correcion*/
+}
+.capa2{
+    background-color: gold;
+    position: absolute;
+    top: 80px;
+    left:5%;
+    z-index: 100;/* Cuanto mayor mas arriba aparecera la capa*/
+}
+.propiedadoverflow{
+    height: 300px; /* tengo que forzar a una altura fija para demostrar la propiedad overflow*/
+    overflow: hidden;
+}
+.propiedadooverflowauto{
+    height: 300px; /* tengo que forzar a una altura fija para demostrar la propiedad overflow*/
+    overflow: auto;
+}
+.propiedadoverflowscroll{
+    height: 300px; /* tengo que forzar a una altura fija para demostrar la propiedad overflow*/
+    overflow: scroll;
+}
