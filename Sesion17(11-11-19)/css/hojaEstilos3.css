@@ -1,0 +1,36 @@
+.capaestandar{
+    width:25%;
+    min-height: 200px;
+    border:1px solid black;
+}
+.flotariz{
+    float: left;
+}
+.flotarde{
+    float: right;
+}
+.contenedor{
+    margin-top: 5%; 
+    width: 90%;
+    min-height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    border:solid 1px red;
+    box-sizing: border-box;
+    clear: both; /* limpio los flotantes superiores */
+}
+.contenedormenu{
+    width:95%;
+   margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.elemento{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 15px 0;
+    border:2px solid goldenrod;
+    box-sizing: border-box;
+}
+
