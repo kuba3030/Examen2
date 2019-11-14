@@ -1,0 +1,85 @@
+.flotarderecha{
+    float: right;
+    width: 200px;
+    height: 300px;
+}
+.capacentrado{ /* Centrado de elementos de bloque*/
+    width: 70%;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centradoelementoinline{
+    text-align: center;
+}
+.contenedor{
+    width:80%;
+    min-height: 600px;
+    border:solid 1px black;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alinearderechapositiopn{
+    position: absolute;
+    right:0;
+    top:0;
+    width: 200px;
+    height: 350px;
+}
+.alinearderecha{
+    float:right;
+}
+ol{
+    list-style-type: none;
+    margin-top: 40px;
+}
+ol li{
+    padding: 30px 0;
+    border:solid 1px black;
+    display: inline;
+}
+.centradoverticalhorizontal{
+    height: 200px;
+    line-height: 200px;
+    border:1px solid black;
+    text-align: center;
+    margin-top: 50px;
+}
+.centradoverticalhorizontal p{
+   /* line-height: 1.5; */
+    display:inline-block;
+    vertical-align: middle;
+}
+.contenedortrasform{
+    margin-top: 50px;
+    height: 400px;
+    position: relative;
+    border:1px solid black;
+}
+.contenedortrasform p{
+    margin: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); /* eje x el primero y eje y el segundo*/
+    -ms-transform: translate(-50%,-50%);
+}
+.opacidad{
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    width: 100%;
+}
+.contenedorimagen{
+    position: relative;
+
+}
+.textocentrado{
+    
+    position:absolute;
+    top:50%;
+    left:0;
+    text-align: center;
+    width: 100%;
+}
